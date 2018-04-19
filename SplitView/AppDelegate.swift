@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SplitView
-//
-//  Created by Jorge Maldonado Borbón on 11/12/17.
-//  Copyright © 2017 Jorge Maldonado Borbón. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

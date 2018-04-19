@@ -3,25 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CFB74E571FDF83BE00A6977F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB74E561FDF83BE00A6977F /* AppDelegate.swift */; };
-		CFB74E591FDF83BF00A6977F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB74E581FDF83BF00A6977F /* ViewController.swift */; };
 		CFB74E5C1FDF83BF00A6977F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB74E5A1FDF83BF00A6977F /* Main.storyboard */; };
 		CFB74E5E1FDF83BF00A6977F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB74E5D1FDF83BF00A6977F /* Assets.xcassets */; };
 		CFB74E611FDF83BF00A6977F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB74E5F1FDF83BF00A6977F /* LaunchScreen.storyboard */; };
+		CFB74E691FDF855E00A6977F /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB74E681FDF855E00A6977F /* RootTableViewController.swift */; };
+		CFB74E6B1FDF858F00A6977F /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB74E6A1FDF858F00A6977F /* DetalleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFB74E531FDF83BE00A6977F /* SplitView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB74E561FDF83BE00A6977F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFB74E581FDF83BF00A6977F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFB74E5B1FDF83BF00A6977F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFB74E5D1FDF83BF00A6977F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB74E601FDF83BF00A6977F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB74E621FDF83BF00A6977F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB74E681FDF855E00A6977F /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		CFB74E6A1FDF858F00A6977F /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				CFB74E561FDF83BE00A6977F /* AppDelegate.swift */,
-				CFB74E581FDF83BF00A6977F /* ViewController.swift */,
+				CFB74E6A1FDF858F00A6977F /* DetalleViewController.swift */,
+				CFB74E681FDF855E00A6977F /* RootTableViewController.swift */,
 				CFB74E5A1FDF83BF00A6977F /* Main.storyboard */,
 				CFB74E5D1FDF83BF00A6977F /* Assets.xcassets */,
 				CFB74E5F1FDF83BF00A6977F /* LaunchScreen.storyboard */,
@@ -92,7 +95,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Jorge Maldonado Borbón";
+				ORGANIZATIONNAME = codelapp;
 				TargetAttributes = {
 					CFB74E521FDF83BE00A6977F = {
 						CreatedOnToolsVersion = 9.2;
@@ -101,7 +104,7 @@
 				};
 			};
 			buildConfigurationList = CFB74E4E1FDF83BE00A6977F /* Build configuration list for PBXProject "SplitView" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFB74E591FDF83BF00A6977F /* ViewController.swift in Sources */,
+				CFB74E6B1FDF858F00A6977F /* DetalleViewController.swift in Sources */,
 				CFB74E571FDF83BE00A6977F /* AppDelegate.swift in Sources */,
+				CFB74E691FDF855E00A6977F /* RootTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +220,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,7 +270,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -275,9 +281,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SplitView/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.SplitView;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +300,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SplitView/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.SplitView;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
